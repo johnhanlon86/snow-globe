@@ -5,7 +5,7 @@ class CreateTickets < ActiveRecord::Migration[7.0]
       t.references :performance, null: false, foreign_key: true
       t.integer :status
       t.integer :access
-      t.decimal :price
+      t.monetize :price
 
       t.timestamps
     end
