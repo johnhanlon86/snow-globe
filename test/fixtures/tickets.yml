@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user: one
+  performance: one
+  status: 1
+  access: 1
+  price: 9.99
+
+two:
+  user: two
+  performance: two
+  status: 1
+  access: 1
+  price: 9.99
