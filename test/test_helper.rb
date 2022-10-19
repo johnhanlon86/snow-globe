@@ -1,6 +1,8 @@
 ENV["RAILS_ENV"] ||= "test"
 require_relative "../config/environment"
 require "rails/test_help"
+require 'capybara-screenshot/minitest'
+require 'capybara-screenshot/testunit'
 
 class ActiveSupport::TestCase
   # Run tests in parallel with specified workers
