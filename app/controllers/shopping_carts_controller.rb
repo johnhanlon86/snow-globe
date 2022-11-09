@@ -1,3 +1,7 @@
+def show
+    @cart = ShoppingCart.new(current_user)
+end
+
 def update
     performance = Performance.find(params[:performance_id])
     workflow = AddsToCart.new(
