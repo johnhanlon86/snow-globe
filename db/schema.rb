@@ -29,7 +29,6 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_03_125629) do
   end
 
   create_table "tickets", force: :cascade do |t|
-    t.integer "user_id", null: false
     t.integer "performance_id", null: false
     t.integer "status"
     t.integer "access"
@@ -38,10 +37,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_03_125629) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["performance_id"], name: "index_tickets_on_performance_id"
-    t.index ["user_id"], name: "index_tickets_on_user_id"
   end
 
   add_foreign_key "performances", "events"
   add_foreign_key "tickets", "performances"
-  add_foreign_key "tickets", "users"
 end
