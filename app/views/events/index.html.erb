@@ -1,6 +1,5 @@
-<h2>Upcoming Performances</h2>
+<h2>Upcoming Events</h2>
 
-<p>I need to show the events here</p>
 <% @events.each do |event| %>
   <<%= link_to(event.name, event_path(event)) %>
 <% end %>
