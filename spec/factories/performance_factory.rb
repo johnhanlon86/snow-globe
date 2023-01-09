@@ -1,9 +1,7 @@
 FactoryBot.define do
   factory :performance, class: "Performance" do
     association :event, factory: :event
-    # user_id { 123 }
-    # event_id { 456 }
-    start_time {  }
-    end_time {  }
+    start_time { DateTime.now + 3.days }
+    end_time { DateTime.now + 4.days }
   end
 end
