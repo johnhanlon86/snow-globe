@@ -1,5 +1,7 @@
 <h2>Upcoming Events</h2>
 
 <% @events.each do |event| %>
-  <<%= link_to(event.name, event_path(event)) %>
+  <br>
+  <%= link_to(event.name, event_path(event)) %>
+  <br>
 <% end %>
