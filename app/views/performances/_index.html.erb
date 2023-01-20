@@ -1,10 +1,11 @@
 <h2>Upcoming Performances</h2>
 
-<p>I need to show the performances here</p>
 <% @event.performances.each do |performance| %>
-  <%= performance.start_time %>
   <br>
-  <%= performance.end_time %>
+  <p><b>Performance Start Time:</b> <%= performance.start_time %></p>
+  <br>
+  <p><b>Performance End Time:</b> <%= performance.end_time %></p>
+  <br>
 <% end %>
 
 # Add a serializer to reformat the start_time and end_time data (server time zone?)
